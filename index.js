@@ -2,7 +2,7 @@
 const playerSelection = "rock";
 
 
-let player = 3;
+let player = 0;
 let computer = 0;
 let gamesPlayed = 0; 
 
@@ -39,18 +39,11 @@ function playRound(playerSelection) {
     }
 }
 
-const result = playRound(playerSelection);
-console.log(result);
 
 
-function game(player, computer) {
- if (player = 3) {
-    return "You WIN the game!"
- } else if (computer = 3) {
-     return "You LOSE the game!"
- } else {
-     return "draw";
- }
-} 
-let winner = game();
-console.log(winner);
+
+
+    for(let i = 0; i < 5; i++) {
+        playRound(playerSelection); 
+        console.log(i, playRound(playerSelection));
+    }
