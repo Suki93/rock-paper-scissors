@@ -43,7 +43,4 @@ function playRound(playerSelection) {
 
 
 
-    for(let i = 0; i < 5; i++) {
-        playRound(playerSelection); 
-        console.log(i, playRound(playerSelection));
-    }
+
