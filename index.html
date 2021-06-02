@@ -1,56 +1,75 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="index.css" type="text/css" rel="stylesheet" >
 
-    </head>
-    <body>
-        <h1>ROCK, PAPER, SCISSORS</h1>
-        <div class="container">
-          <div class="game-container">
-            
+<head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet" type="text/css">
+</head>
 
-                <div class="player-pick">
-                <h2>Player:</h2>
-                <div class="pc-info">
-                    
-                    <p class="score">Score: 0</p>
-                </div>
-                <div class="picture-con">
-                <div class="picture" id="paper">
-                    <img src="paper.jpg">
-                </div>
-                <div class="picture" id="scissors">
-                    <img src="scissors.png">
-                </div>
-                <div class="picture" id="rock">
-                    <img src="rock.jpg">
-                </div>
-            </div>
-            </div>
-            
-            <div class="pc-pick">
-                
-                <h2>Computer:</h2>
-                <div class="player-info">
-                    <p class="score">Score: 0</p>
-                </div>
-                <div class="picture-con">
-                <div class="picture">
-                    <img src="paper.jpg">
-                </div>
-                <div class="picture">
-                    <img src="scissors.png">
-                </div>
-                <div class="picture">
-                    <img src="rock.jpg">
-                </div>
-            </div>
-            </div>
-        
+<body>
+    
+    <script src="index.js" type="text/javascript"></script>
+  
+    <div class="container" id="endcontainer">
+        <div class="topcontainer">
+            <h1 id="gameh1">ROCK, PAPER, SCISSORS!!!</h1>
         </div>
+        <div class="gamecontainer">
+            <div class="playercontainer">
+                <h1 class="playerh1">Player</h1>
+                <div class="playerinformation">
+                    <div class="playerscore">
+                        <p class="score" id="playerscore">Score: 0</p>
+                    </div>
+                </div>
+                <div class="gameselections">
+                    <div class="gameselection" id="rockdiv">
+                       
+                        <img class="selection" id ="rockimg" src="rock.jpg">
+                    </div>
+                    <div class="gameselection" id="paperdiv">
+                        
+                        <img class="selection" id="paperimg" src="paper.jpg">
+                    </div>
+                    <div class="gameselection" id="scissorsdiv">
+                        
+                        <img class="selection" id="scissorsimg" src="scissors.png">
+                    </div>
+                </div>
+            </div>
+            <div class="playercontainer">
+                <h1 class="playerh1">Computer</h1>
+                <div class="playerinformation">
+
+                    <div class="playerscore">
+                        <p class="score" id="computerscore">Score: 0</p>
+                    </div>
+                </div>
+                <div class="gameselections">
+                    <div class="gameselection" id="computerrockdiv">
+                        
+                        <img class="selection" src="rock.jpg">
+                    </div>
+                    <div class="gameselection" id="computerpaperdiv">
+                        
+                        <img class="selection" src="paper.jpg">
+                    </div>
+                    <div class="gameselection" id="computerscissorsdiv">
+                        
+                        <img class="selection" src="scissors.png">
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <script src="index.js" type="text/javascript"></script>
-    </body>
+
+        <div class="bottomcontainer" id="bottomcontainer">
+
+            <p class="gameupdates"></p>
+            <a href="index.html" id="endbutton">Play Again?</button>
+        </div>
+
+    </div>
+</body>
 </html>
